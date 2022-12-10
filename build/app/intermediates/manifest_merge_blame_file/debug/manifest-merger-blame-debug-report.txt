@@ -1,0 +1,297 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.qrcodescanner"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\FG\android\app\src\main\AndroidManifest.xml:5:5-66
+14-->E:\FG\android\app\src\main\AndroidManifest.xml:5:22-64
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->E:\FG\android\app\src\main\AndroidManifest.xml:3:5-72
+15-->E:\FG\android\app\src\main\AndroidManifest.xml:3:22-69
+16    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+16-->E:\FG\android\app\src\main\AndroidManifest.xml:4:5-73
+16-->E:\FG\android\app\src\main\AndroidManifest.xml:4:22-70
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->E:\FG\android\app\src\debug\AndroidManifest.xml:9:5-81
+17-->E:\FG\android\app\src\debug\AndroidManifest.xml:9:22-78
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->E:\FG\android\app\src\main\AndroidManifest.xml:6:5-65
+18-->E:\FG\android\app\src\main\AndroidManifest.xml:6:22-63
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-80
+19-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-77
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.qrcodescanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.qrcodescanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+26    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+28        android:name="android.hardware.camera"
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+31        android:name="android.hardware.camera.front"
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+32        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+33    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+35        android:name="android.hardware.camera.autofocus"
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+38        android:name="android.hardware.camera.flash"
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+40    <uses-feature
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+41        android:name="android.hardware.screen.landscape"
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+42        android:required="false" />
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+43    <uses-feature
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+44        android:name="android.hardware.wifi"
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+45        android:required="false" />
+45-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+46
+47    <application
+47-->E:\FG\android\app\src\main\AndroidManifest.xml:7:4-48:19
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\90ab03804ab60aee3ba3bf60ed1b6292\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:icon="@mipmap/ic_launcher"
+50-->E:\FG\android\app\src\main\AndroidManifest.xml:9:9-43
+51        android:label="QR Code Scanner"
+51-->E:\FG\android\app\src\main\AndroidManifest.xml:8:9-40
+52        android:requestLegacyExternalStorage="true" >
+52-->E:\FG\android\app\src\main\AndroidManifest.xml:10:9-52
+53        <activity
+53-->E:\FG\android\app\src\main\AndroidManifest.xml:11:9-39:20
+54            android:name="com.example.qrcodescanner.MainActivity"
+54-->E:\FG\android\app\src\main\AndroidManifest.xml:12:13-41
+55            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+55-->E:\FG\android\app\src\main\AndroidManifest.xml:15:13-163
+56            android:hardwareAccelerated="true"
+56-->E:\FG\android\app\src\main\AndroidManifest.xml:16:13-47
+57            android:launchMode="singleTop"
+57-->E:\FG\android\app\src\main\AndroidManifest.xml:13:13-43
+58            android:theme="@style/LaunchTheme"
+58-->E:\FG\android\app\src\main\AndroidManifest.xml:14:13-47
+59            android:windowSoftInputMode="adjustResize" >
+59-->E:\FG\android\app\src\main\AndroidManifest.xml:17:13-55
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+67-->E:\FG\android\app\src\main\AndroidManifest.xml:22:13-25:17
+68                android:name="io.flutter.embedding.android.NormalTheme"
+68-->E:\FG\android\app\src\main\AndroidManifest.xml:23:15-70
+69                android:resource="@style/NormalTheme" />
+69-->E:\FG\android\app\src\main\AndroidManifest.xml:24:15-52
+70            <!--
+71                 Displays an Android View that continues showing the launch screen
+72                 Drawable until Flutter paints its first frame, then this splash
+73                 screen fades out. A splash screen is useful to avoid any visual
+74                 gap between the end of Android's launch screen and the painting of
+75                 Flutter's first frame.
+76            -->
+77            <!-- <meta-data -->
+78            <!-- android:name="io.flutter.embedding.android.SplashScreenDrawable" -->
+79            <!-- android:resource="@drawable/launch_background" -->
+80            <!-- /> -->
+81            <intent-filter>
+81-->E:\FG\android\app\src\main\AndroidManifest.xml:35:13-38:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->E:\FG\android\app\src\main\AndroidManifest.xml:36:17-68
+82-->E:\FG\android\app\src\main\AndroidManifest.xml:36:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->E:\FG\android\app\src\main\AndroidManifest.xml:37:17-76
+84-->E:\FG\android\app\src\main\AndroidManifest.xml:37:27-74
+85            </intent-filter>
+86        </activity>
+87
+88        <meta-data
+88-->E:\FG\android\app\src\main\AndroidManifest.xml:40:9-42:69
+89            android:name="com.google.android.gms.ads.APPLICATION_ID"
+89-->E:\FG\android\app\src\main\AndroidManifest.xml:41:13-69
+90            android:value="ca-app-pub-3940256099942544~3347511713" />
+90-->E:\FG\android\app\src\main\AndroidManifest.xml:42:13-67
+91        <!--
+92             Don't delete the meta-data below.
+93             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+94        -->
+95        <meta-data
+95-->E:\FG\android\app\src\main\AndroidManifest.xml:45:9-47:33
+96            android:name="flutterEmbedding"
+96-->E:\FG\android\app\src\main\AndroidManifest.xml:46:13-44
+97            android:value="2" />
+97-->E:\FG\android\app\src\main\AndroidManifest.xml:47:13-30
+98
+99        <provider
+99-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:20
+100            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+100-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-82
+101            android:authorities="com.example.qrcodescanner.flutter.image_provider"
+101-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-74
+102            android:exported="false"
+102-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+103            android:grantUriPermissions="true" >
+103-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-47
+104            <meta-data
+104-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-20:75
+105                android:name="android.support.FILE_PROVIDER_PATHS"
+105-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-67
+106                android:resource="@xml/flutter_image_picker_file_paths" />
+106-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-72
+107        </provider>
+108
+109        <activity
+109-->[:url_launcher_android] E:\FG\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+110            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+110-->[:url_launcher_android] E:\FG\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+111            android:exported="false"
+111-->[:url_launcher_android] E:\FG\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+112            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+112-->[:url_launcher_android] E:\FG\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+113
+114        <provider
+114-->[:share] E:\FG\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+115            android:name="io.flutter.plugins.share.ShareFileProvider"
+115-->[:share] E:\FG\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-70
+116            android:authorities="com.example.qrcodescanner.flutter.share_provider"
+116-->[:share] E:\FG\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+117            android:exported="false"
+117-->[:share] E:\FG\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+118            android:grantUriPermissions="true" >
+118-->[:share] E:\FG\build\share\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+119            <meta-data
+119-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-20:75
+120                android:name="android.support.FILE_PROVIDER_PATHS"
+120-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-67
+121                android:resource="@xml/flutter_share_file_paths" />
+121-->[:image_picker] E:\FG\build\image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-72
+122        </provider>
+123
+124        <uses-library
+124-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+125            android:name="androidx.window.extensions"
+125-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+127        <uses-library
+127-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+128            android:name="androidx.window.sidecar"
+128-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+129            android:required="false" />
+129-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\289dbc00909ce6513708fd612063726d\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+130
+131        <activity
+131-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+132            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+132-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+133            android:excludeFromRecents="true"
+133-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+134            android:exported="false"
+134-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+136        <!--
+137            Service handling Google Sign-In user revocation. For apps that do not integrate with
+138            Google Sign-In, this service will never be started.
+139        -->
+140        <service
+140-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+141            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+141-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+142            android:exported="true"
+142-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+143            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+143-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\01d9e8073987d20fcd9e33d7d3e86dd5\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+144
+145        <activity
+145-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\cb0a2d3f77a1dc55c848ae8837286f67\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+146            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+146-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\cb0a2d3f77a1dc55c848ae8837286f67\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+147            android:exported="false"
+147-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\cb0a2d3f77a1dc55c848ae8837286f67\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\cb0a2d3f77a1dc55c848ae8837286f67\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+149
+150        <meta-data
+150-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\14108166d634fd32de303fd4ccb6aec0\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+151            android:name="com.google.android.gms.version"
+151-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\14108166d634fd32de303fd4ccb6aec0\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+152            android:value="@integer/google_play_services_version" />
+152-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-3\14108166d634fd32de303fd4ccb6aec0\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+153
+154        <provider
+154-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+155            android:name="androidx.startup.InitializationProvider"
+155-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+156            android:authorities="com.example.qrcodescanner.androidx-startup"
+156-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+157            android:exported="false" >
+157-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+158            <meta-data
+158-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+159                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+159-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+160                android:value="androidx.startup" />
+160-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\e9becb39a88ec9d7e5c6ec3e66165ef1\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+161            <meta-data
+161-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Dell\.gradle\caches\transforms-3\cea1d508224896a08b5a6e63a288f71c\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+162                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+162-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Dell\.gradle\caches\transforms-3\cea1d508224896a08b5a6e63a288f71c\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+163                android:value="androidx.startup" />
+163-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Dell\.gradle\caches\transforms-3\cea1d508224896a08b5a6e63a288f71c\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+164        </provider>
+165
+166        <activity
+166-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+167            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+167-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+168            android:clearTaskOnLaunch="true"
+168-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+169            android:screenOrientation="sensorLandscape"
+169-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+170            android:stateNotNeeded="true"
+170-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+171            android:theme="@style/zxing_CaptureTheme"
+171-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+172            android:windowSoftInputMode="stateAlwaysHidden" />
+172-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Dell\.gradle\caches\transforms-3\1c035c4c80ba72021c4d9b11f9a6febe\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+173    </application>
+174
+175</manifest>

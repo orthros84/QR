@@ -1,0 +1,8 @@
+com/tolotra/account_picker/AccountPicker.java
+ com.tolotra.account_picker.AccountPicker
+com/tolotra/account_picker/BuildConfig.java
+ com.tolotra.account_picker.BuildConfig
+com/tolotra/account_picker/MethodCallHandlerImpl.java
+ com.tolotra.account_picker.MethodCallHandlerImpl
+com/tolotra/account_picker/AccountPickerPlugin.java
+ com.tolotra.account_picker.AccountPickerPlugin
